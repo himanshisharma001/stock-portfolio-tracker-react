@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6fb;
+}
+
+.navbar {
+  background: #0b1f3a;
+  color: white;
+  padding: 18px;
+  text-align: center;
+}
+
+.navbar h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.navbar p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+}
+
+.summaryGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.summaryCard h4 {
+  margin: 0;
+  font-size: 15px;
+  color: #444;
+}
+
+.summaryCard p {
+  font-size: 20px;
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.profit {
+  border-left: 6px solid green;
+}
+
+.loss {
+  border-left: 6px solid red;
+}
+
+.topSection {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 15px;
+}
+
+.stockForm {
+  display: grid;
+  gap: 10px;
+}
+
+.stockForm input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.stockForm button {
+  padding: 10px;
+  border: none;
+  background: #0b1f3a;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.stockForm button:hover {
+  background: #12345f;
+}
+
+.searchCard input {
+  width: 100%;
+  max-width: 340px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.tableResponsive {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  font-size: 14px;
+}
+
+th {
+  background: #0b1f3a;
+  color: white;
+}
+
+.noData {
+  padding: 20px;
+  text-align: center;
+  color: gray;
+}
+
+.deleteBtn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 7px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.deleteBtn:hover {
+  background: darkred;
+}
+
+.green {
+  color: green;
+  font-weight: bold;
+}
+
+.red {
+  color: red;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media(max-width: 900px) {
+  .summaryGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .topSection {
+    grid-template-columns: 1fr;
+  }
+}
